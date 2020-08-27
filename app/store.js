@@ -1,7 +1,8 @@
 import Blog from "./Models/Blog.js"
 let _state = {
-  blog: new Blog ({title: "HI"}),
-  blogs: []
+  blogs:[
+    new Blog ({title: "HI"})
+  ]
 };
 
 class Store {
