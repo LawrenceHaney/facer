@@ -19,7 +19,8 @@ export default class BlogsController {
   console.log("controler")
     let form = event.target
     let newBlog = {
-     title: form.title.value 
+     title: form.title.value,
+     body: form.body.value
     }
     BlogsService.createBlog(newBlog)
     _drawblog()

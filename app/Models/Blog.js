@@ -1,13 +1,15 @@
 import { generateId } from "../uits.js"
 export default class Blog {
-    constructor({title, id}) {
+    constructor({title, body, id}) {
         this.title = title
+        this.body = body || ""
         this.id = id || generateId()
         this.penut = []
     }
 
     get Template() {
         return `<h1 class="col-12">${this.title}</h1> 
+        <p class="col-12">${this.body}</p>
         <div class col-12>${this.commits} </div>
         <div class col-12>${this.penutgallery} </div>
         <button type="button" class="btn btn-danger" onclick="app.blogsController.deleteBlog('${this.id}')"> bye</button>`
