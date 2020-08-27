@@ -1,7 +1,7 @@
 import Blog from "./Models/Blog.js"
 let _state = {
-  blogs:[
-    new Blog ({title: "HI"})
+  blogs: [
+    new Blog({ title: "New Post" })
   ]
 };
 
