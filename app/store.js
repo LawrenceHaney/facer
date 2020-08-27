@@ -1,9 +1,7 @@
-import Value from "./Models/Value.js";
-
+import Blog from "./Models/Blog.js"
 let _state = {
-  activeValue: new Value({ title: "Value" }),
-  /** @type {Value[]} */
-  values: []
+  blog: new Blog ({title: "HI"}),
+  blogs: []
 };
 
 class Store {
