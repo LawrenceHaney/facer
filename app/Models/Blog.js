@@ -1,4 +1,4 @@
-import {generateId} from "./app/uits.js"
+import { generateId } from "../uits.js"
 export default class Blog {
     constructor({title}) {
         this.title = title

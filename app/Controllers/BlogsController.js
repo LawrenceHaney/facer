@@ -8,7 +8,15 @@ function _drawblog(){
 //Public
 export default class BlogsController {
   constructor() {
-    console.log("controller here")
     _drawblog()
+  }
+
+  newBlog(event){
+    event.preventDefult()
+    let form = event.target
+    let newBlog = {
+     title: form.title.value 
+    }
+    BlogsService.createBlog(newBlog)
   }
 }
