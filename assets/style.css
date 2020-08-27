@@ -3,3 +3,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 header{ } 
 main{flex-grow: 1;} 
 footer{ }
+
+.text-shadow{
+  text-shadow: .1em .1em 5px var(--dark);
+}
